@@ -1,0 +1,205 @@
+@import "variable"
+.container
+  max-width: 1044.39px 
+
+.order
+  position: relative
+  display: flex
+  
+  background: #000 url('../img/order/bg-order.png') center center
+  background-size: cover
+  color: $font-colorlight
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background: rgba(0, 0, 0, 0.1)
+    
+  &__text
+    display: flex
+    flex-direction: column
+    width: 520px
+  &__wrap
+    display: flex
+    position: relative
+    
+  &__smallText
+    width: 240px
+    font-size: 1.7rem
+    font-weight: 300
+    margin: 0
+    padding-left: 45px
+    
+  &__title
+    font-size: 3.5rem
+    margin-top: 7rem
+    +black
+  &__subtitle
+    position: relative
+    width: 480px
+    border-radius: 3px 3px 3px 3px
+    background-color: $color-icon
+    margin: 0 0 40px 0
+    padding: 10px
+    font-size: 1.8rem
+    
+    &::after
+      content: ""
+      position: absolute
+      //width: 0 
+      //height: 0
+      top: 0
+      right: -17px
+      border-top: 30px solid transparent
+      border-left: 18px solid $color-icon
+      border-bottom: 30px solid transparent
+      
+     
+    
+  &__form
+    display: flex
+    justify-content: flex-end
+    border: 4px solid #21a3af
+    border-radius: 3px
+    background-color: $font-color
+
+.bag
+  &::before
+      content: ''
+      position: absolute
+      top: 0
+      right: 50%
+      transform: translateX(50%)
+      width: 33px
+      height: 38px
+      background: url('../img/order/iconBag.png') center center no-repeat
+      background-size: cover
+.clock
+   &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 33px
+      height: 38px
+      background: url('../img/order/iconWatch.png') center center no-repeat
+      background-size: cover     
+.form
+  padding: 3.5rem 5.5rem          
+
+.formBlock
+  display: flex
+  flex-direction: column
+  //width: 27rem 
+  border: none
+  padding: 0
+  .legend
+    text-align: center
+    font-size: 2.2rem
+    margin-top: 0
+    
+  .formInput
+    margin-bottom: 5px
+    padding: 1.6rem
+    border: 2px solid $font-colorlight
+    border-radius: 3px
+    font-size: 1.6rem
+    font-weight: 400
+    background-color: $font-color
+    width: 100%
+    color: $font-colorlight 
+    &::placeholder
+      color: $font-colorlight
+  .formButton
+    width: 100%
+    height: 6.2rem
+    font-size: 1.8rem 
+  .formSmall
+    font-size: 1.4rem
+    text-align: center
+    font-weight: 300
+    margin-bottom: 0   
+
+.wrap__order
+  display: flex
+  justify-content: space-between
+  padding: 10px 0
+.orderFooter
+   background: #000 url('../img/order/opderFooter.png') center center no-repeat
+   background-size: cover
+
+@media (max-width: 1000px)
+  .order
+    padding: 33px 0
+    &__title
+      margin-top: 0
+      width: 100%  
+    &__subtitle
+      width: 92%  
+    &__smallText
+      width: 260px  
+    &__wrap
+      width: 100%
+      justify-content: space-between  
+    &__form
+      margin-top: 15px
+      width: 430px
+      justify-content: center
+
+  .wrap__order
+    display: flex 
+    flex-direction: column
+    align-items: center
+  .bag
+    &::before
+      right: 47%
+      transform: translateX(50%)
+@media (max-width: 576px)
+  .order
+    padding: 4rem 0
+    &__text
+      max-width: 280px  
+    &__title
+      font-size: 2.2rem
+    &__subtitle
+      font-size: 1.2rem
+    &__wrap
+      justify-content: space-around 
+    &__form
+      width: 265px
+      height: 235px
+    &__smallText
+      font-size: 1.1rem
+      padding-left: 27px
+    &__formMain
+      padding: 15px 30px  
+      .formInput
+        height: 4rem
+        margin-bottom: 5px
+        padding: 1.6rem  
+        font-size: 1.2rem   
+      .formButton
+        height: 4rem 
+        font-size: 1.2rem 
+      .formSmall
+        font-size: 1.1rem   
+      .legend
+        font-size: 1.4rem 
+        margin: 0 0 10px 0    
+    .clock
+      &::before
+        width: 23px
+        height: 27px
+        background-size: cover
+    .bag
+      
+      &::before
+        width: 23px
+        height: 27px
+        background-size: cover    
+
+      
+      

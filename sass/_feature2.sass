@@ -1,0 +1,136 @@
+@import "variable"
+.container
+  max-width: 1044.39px
+  position: relative
+.feature2
+  position: relative
+  display: flex
+  background-color: $bg-feature
+  padding: 8rem 0 6rem 0
+  justify-content: center
+  &__three
+    display: flex
+    align-items: center
+    justify-content: space-around
+    .wrap2
+      display: flex
+      justify-content: flex-start
+      width: 400px
+      margin-right: 50px
+      .three
+        margin: 0 
+        &::before
+          content: ""
+          position: absolute
+          width: 43px
+          height: 43px
+          top: 0 
+          left: 0
+          background: #fff url("../img/feature2/icon3.png") no-repeat center center
+          //background-size: cover 
+  &__four 
+    display: flex
+    align-items: center
+    justify-content: space-around
+    .wrap1
+      display: flex
+      justify-content: flex-end
+      width: 400px
+      .four
+        margin: 0 
+        &::before
+          content: ""
+          position: absolute
+          width: 43px
+          height: 43px
+          top: 0 
+          left: 0
+          background: #fff url("../img/feature2/icon4.png") no-repeat center
+          background-size: cover     
+  &__text
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 370px
+    padding-left: 50px
+    margin: 0
+    
+    
+  &__title
+    +black
+    font-size: 2.2rem
+  &__subtitle
+    font-size: 1.7rem
+    font-weight: 400
+
+
+  
+
+.feature2
+  //padding-right: 43px
+.smartImg_two
+  position: absolute
+  left: 0
+  top: 35%
+  width: 80px
+  height: 80px
+  background: url("../img/feature2/smart2.png")
+  background-size: cover 
+.smartImg_three
+  position: absolute
+  right: 10%
+  bottom: 0
+  width: 70px
+  height: 70px
+  background: url("../img/feature2/smart3.png")
+  background-size: cover          
+
+@media (max-width: 1000px)
+  .feature2
+    flex-direction: column
+    &__three
+      flex-direction: column
+    &__four
+      flex-direction: column-reverse
+      
+    &__text
+      margin: 20px auto  
+    .wrap2
+      margin: 0
+    .wrap1
+      justify-content: flex-start
+   
+@media (max-width: 576px) 
+  .feature2
+    padding: 4rem 0
+    &__title
+      font-size: 1.4rem
+      font-weight: 500
+      width: 100%
+    &__subtitle
+      font-size: 1.2rem
+      width: 100%
+    &__text
+      width: 70%
+      padding-left: 35px
+    &__three
+      .wrap2
+        .three
+          &::before
+            width: 33px 
+            height: 33px 
+    &__four
+      .wrap1
+        .four
+          &::before
+            width: 33px !important
+            height: 33px !important
+                  
+  .fotoThree
+    width: 70%
+  .fotoFour
+    width: 70%        
+  .smartImg_two
+    display: none
+  .smartImg_three
+    display: none  

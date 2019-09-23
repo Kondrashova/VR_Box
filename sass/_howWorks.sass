@@ -1,0 +1,133 @@
+@import "variable"
+.container
+  max-width: 1044.39px
+.wrap__howWoorks
+  display: flex 
+  flex-direction: column 
+.howWorks
+  
+  display: flex
+  background-color: $bg-description
+  padding: 8rem 0 6rem 0
+  &__title
+    position: relative
+    text-align: center
+    +black
+    padding-bottom: 10px
+    font-size: 3.5rem
+    font-weight: 800
+  &__main
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: flex-start
+    .main__block
+      position: relative
+      display: flex
+      flex-direction: column
+      width: 220px
+      height: 280px
+      align-items: center
+      .main__imgBlock
+        display: flex
+        height: 170px
+        //width: 170px
+        text-align: center
+        align-items: flex-end
+        margin-bottom: 4rem
+      .main__iconWrap
+        position: absolute
+        bottom: 25%
+        left: 50%
+        transform: translateX(-50%)
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 57px
+        height: 57px
+        background-color: $color-icon
+        border-radius: 50%
+        padding: 3px
+        .icon
+          display: flex
+          justify-content: center
+          align-items: center
+          width: 100%
+          height: 100%
+          background-color: $color-icon
+          border-radius: 50%
+          border: 4px solid $font-colorlight
+          color: $font-colorlight
+          font-size: 3rem
+      .main__text
+        text-align: center
+        font-size: 1.5rem    
+  .line
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width: 56px
+    height: 5px
+    background-color: $color-icon 
+    
+@media (max-width: 1000px) 
+  .main__block
+    width: 330px !important
+
+@media (max-width: 740px)
+  .main__block
+    width: 240px !important
+
+@media (max-width: 576px)
+  .howWorks
+    padding: 4rem 0
+    &__title
+      font-size: 2.2rem 
+    &__main
+      justify-content: space-around
+      .main__block
+        width: 175px !important
+        height: 200px
+        margin-bottom: 2rem
+        .main__iconWrap
+          bottom: 35%
+        .main__imgBlock
+          margin-bottom: 2rem
+          align-items: flex-end
+          width: 130px
+          height: 120px !important
+          .img_howWorks
+            width: 135px
+            //height: 100px
+        .main__text
+          font-size: 1.1rem 
+        .main__iconWrap
+          width: 30px
+          height: 30px
+          .icon
+            font-size: 1.5rem
+@media (max-width: 450px)            
+  .howWorks
+    &__title
+    &__main
+      .main__block
+        width: 140px !important
+               
+    
+      
+       
+        
+      
+  
+      
+  
+
+   
+
+ 
+  
+     
+        
+
+

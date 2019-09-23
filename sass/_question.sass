@@ -1,0 +1,25 @@
+@import "variable"
+.question
+    padding: 4rem 0 
+    .container
+        max-width: 1044.39px
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center    
+    &__title
+        +black
+        font-size: 35px
+        margin: 0
+    &__subtitle
+        font-size: 18px
+        +medium
+        border-bottom: 2px dashed #040606 
+@media (max-width: 576px)
+    .question
+        background: $bg-description
+        &__title
+            font-size: 22px
+        &__subtitle
+            font-size: 14px   

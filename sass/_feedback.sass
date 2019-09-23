@@ -1,0 +1,94 @@
+@import "variable"
+.feedback
+    background-color: $bg-description
+    padding: 8rem 0 6rem 0
+    .container
+        max-width: 1044.39px    
+    &__wrap
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__title
+        position: relative
+        font-size: 3.5rem
+        text-align: center
+        margin: 0
+        padding: 15px
+        +black     
+    &__wrapper
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        margin-top: 3rem
+
+    &__block
+        display: flex
+        flex-wrap: wrap
+        margin-right: 5px
+        margin-bottom: 5px
+        padding: 20px 25px 50px 25px
+        background: $font-colorlight
+        border: 1px solid #3eb7b7
+        width: 440px
+        height: 337px    
+    &__img
+        height: 115px
+        margin-right: 20px
+    &__subtitle
+       font-size: 17px
+    &__text
+        font-size: 15px
+        font-weight: 400
+        line-height: 24px
+        +medium
+    .smartImg_four
+        position: absolute
+        background: url('../img/feedback/smart4.png')
+        background-size: cover 
+        width: 100px               
+        height: 90px
+        top: 120px
+        right: 0
+@media (max-width: 1200px)
+    .smartImg_four
+        top: 120px
+        right: 0px
+
+@media (max-width: 1000px)
+    .smartImg_four
+        top: 140px !important
+        right: 10% !important
+    .feedback
+        padding: 8rem 0  
+        &__block
+            width: 500px
+        &__title
+            font-size: 3.5rem
+            width: 450px     
+@media (max-width: 600px)
+    .smartImg_four
+        display: none            
+@media (max-width: 576px)
+    .smartImg_four
+        display: none
+      
+    .feedback
+        &__title
+            font-size: 2.2rem
+            width: 300px 
+        &__wrapper
+            margin-top: 30px
+        &__block
+            width: 300px
+            height: 211px
+        &__img
+            width: 59px
+            height: 58px
+        &__subtitle
+            font-size: 13px !important
+        &__text
+            font-size: 1.2rem
+            line-height: 12px              
+        padding: 4rem 0

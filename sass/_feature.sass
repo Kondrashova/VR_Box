@@ -1,0 +1,112 @@
+@import "variable"
+.container
+  max-width: 1044.39px
+  position: relative
+.feature
+  position: relative
+  display: flex
+  background-color: $bg-feature
+  padding: 8rem 0 6rem 0
+  justify-content: center
+  &__one
+    display: flex
+    align-items: center
+    justify-content: space-around 
+  &__two 
+    display: flex
+    align-items: center
+    justify-content: space-around 
+  &__text
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 370px
+    padding-left: 50px
+    margin: 0
+  &__title
+    +black
+    font-size: 2.2rem
+  &__subtitle
+    font-size: 1.7rem
+    font-weight: 400
+.one
+  margin: 0 
+  &::before
+    content: ""
+    position: absolute
+    width: 43px
+    height: 43px
+    top: 0 
+    left: 0
+    background: #fff url("../img/feature/icon1.png") no-repeat center
+    background-size: cover
+.two
+  margin: 0 
+  &::before
+    content: ""
+    position: absolute
+    width: 43px
+    height: 43px
+    top: 0 
+    left: 0
+    background: #fff url("../img/feature/icon2.png") no-repeat center
+    background-size: cover
+.wrap1
+  display: flex
+  justify-content: flex-end
+  width: 400px    
+.wrap2
+  display: flex
+  justify-content: flex-start
+  width: 400px
+  margin-right: 50px 
+.feature2
+  //padding-right: 43px
+.smartImg
+  position: absolute
+  right: 0
+  top: 40%
+  width: 82px
+  height: 89px
+  background: url("../img/feature/smart1.png")
+  background-size: cover     
+
+@media (max-width: 1000px)
+  .feature
+    flex-direction: column
+    &__one
+      flex-direction: column
+    &__two
+      flex-direction: column-reverse
+      
+    &__text
+      margin: 20px auto  
+  .wrap2
+    margin: 0
+  .wrap1
+    justify-content: flex-start
+  
+@media (max-width: 576px) 
+  .feature
+    padding: 4rem 0
+    &__title
+      font-size: 1.4rem
+      font-weight: 500
+      width: 100%
+    &__subtitle
+      font-size: 1.2rem
+      width: 100%
+    &__text
+      width: 70%
+      padding-left: 35px  
+  .one, .two
+    &::before
+      width: 32px
+      height: 32px
+  .fotoOne
+    width: 70%
+  .fotoTwo
+    width: 70% 
+  .smartImg
+    display: none         
+

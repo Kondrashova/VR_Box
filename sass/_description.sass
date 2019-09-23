@@ -1,0 +1,150 @@
+@import "variable"
+.container
+  max-width: 1044.39px
+
+.description
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: $bg-description
+  padding: 100px 0 70px 0
+  &__vrap
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__title
+    font-size: 3.5rem
+    +black
+    font-variant: small-caps  
+  &__main
+    width: 490px
+    font-size: 1.5rem
+    font-weight: 400 
+  &__text
+    display: flex
+    flex-direction: column
+    width: 550px
+    vertical-align: top
+  &__foto
+    display: flex
+    width: 470px
+  &__button
+    width: 470px
+    height: 66px
+    font-size: 1.7rem  
+.vr-complete
+  max-width: 430px 
+  max-height: 320px   
+.complete
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  &__one
+    flex-basis: 50% 
+  &__two
+    flex-basis: 50%
+      
+  &__list
+    min-height: 12.5rem 
+    font-size: 1.5rem
+    list-style: none
+    padding-left: 15px
+    
+    li
+      position: relative  
+    li::before
+      content: "\2013"
+      position: absolute
+      width: 4px
+      height: 4px
+      //top: 50%
+      //transform: translateY(-50%)
+      left: -15px
+      
+  &__subtitle
+    font-size: 2rem
+  &__price
+    font-size: 2.2rem
+    color: $color-price
+
+@media (max-width: 1200px)
+  .description
+    &__title
+      font-size: 3rem
+    &__text
+      width: 500px  
+    &__main
+      font-size: 1.3rem
+      width: 450px
+    &__foto
+      width: 400px
+    &__button
+      width: 430px
+      font-size: 1.5rem 
+  .vr-complete
+      max-width: 400px 
+      max-height: 300px
+  .complete
+    &__list
+      font-size: 1.3rem
+      min-height: 9rem 
+    &__subtitle
+      font-size: 1.8rem
+    &__price
+      font-size: 2rem
+
+@media (max-width: 1000px)
+  .description
+    &__vrap
+      flex-direction: column-reverse
+      
+    &__text
+      width: 100%
+    &__main
+      font-size: 1.5rem
+      width: 100%  
+    &__foto
+      margin-left: 50%
+      transform: translateX(-50%)
+    &__button
+      margin-top: 3rem
+      margin-left: 50%
+      transform: translateX(-50%)      
+  .complete
+    //         
+    &__list
+      font-size: 1.5rem
+      //min-height: 9rem
+
+@media (max-width: 576px )
+  .description
+    padding: 4rem 0
+    &__title
+      font-size: 2.4rem
+      font-weight: 800
+    &__main
+      font-size: 1.2rem
+    &__button
+       font-size: 1rem
+       width: 300px
+       height: 39px
+       box-shadow: 0 4px 0 #76ae0c
+    &__foto
+      display: flex
+      width: 100%
+      margin: 0
+      transform: none      
+  .complete
+    flex-direction: column
+    &__list
+      min-height: 0 
+  .vr-complete
+      width: 100% 
+      height: 65%
+
+
+
+
+
+
+           

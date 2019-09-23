@@ -1,0 +1,72 @@
+@import "variable"
+.workScheme
+    background-color: $bg-feature
+    padding: 8rem 0 6rem 0
+    .container
+        max-width: 1044.39px
+    &__wrap
+        display: flex
+        flex-direction: column  
+    &__title
+        position: relative
+        font-size: 3.5rem
+        text-align: center
+        margin: 0
+        padding: 15px
+        +black
+      
+    &__wrapper
+        display: flex
+        justify-content: center
+        margin-top: 9rem
+        
+    &__block
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: flex-start
+        margin-right: 20px
+        width: 250px
+        &:nth-child(4)
+            margin-right: 0
+    &__img
+      height: 133px
+    &__text
+        font-size: 15px
+        text-align: center
+        +medium               
+
+@media (max-width: 1000px)
+    .workScheme
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: center
+        &__block
+            width: 43%
+            margin-bottom: 40px
+            margin-right: 10px
+
+        &__text
+            width: 250px    
+
+
+@media (max-width: 576px)
+    .workScheme
+        padding: 4rem 0
+        &__title
+            font-size: 25px
+        &__wrap
+            align-items: center   
+        &__wrapper
+            margin: 30px
+            justify-content: center
+        &__block
+            width: 250px
+                 
+        &__img
+            width: 78px
+            height: 64px
+
+        &__text
+            font-size: 14px
+            width: 185px                                                     
