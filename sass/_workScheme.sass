@@ -1,5 +1,6 @@
 @import "variable"
 .workScheme
+    position: relative
     background-color: $bg-feature
     padding: 8rem 0 6rem 0
     .container
@@ -19,7 +20,7 @@
         display: flex
         justify-content: center
         margin-top: 9rem
-        
+        padding: 0 20px
     &__block
         display: flex
         flex-direction: column
@@ -35,7 +36,15 @@
         font-size: 15px
         text-align: center
         +medium               
-
+    .smartImg_five
+        position: absolute
+        z-index: 99
+        background: url('../img/workScheme/smart5.png')
+        background-size: cover 
+        width: 100px               
+        height: 90px
+        bottom: 
+        left: 0
 @media (max-width: 1000px)
     .workScheme
         &__wrapper
@@ -69,4 +78,6 @@
 
         &__text
             font-size: 14px
-            width: 185px                                                     
+            width: 185px 
+    .smartImg_five
+        display: none                                                            
