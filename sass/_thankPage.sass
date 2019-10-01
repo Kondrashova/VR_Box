@@ -1,14 +1,13 @@
 @import "variable"
 .thankPage
+    display: none
     position: relative
     height: 100vh
     .container
         
         max-width: 1044.39px
-        margin-top: 0 
-        
-        
-    
+        margin-top: 0
+        margin-bottom: 0
 
     &__bar
         position: absolute
@@ -17,9 +16,17 @@
         height: 87px
         width: 100%
         background: rgba(0, 0, 0, 0.7) 
-        z-index: -1   
+        z-index: -1
+    &__head
+        display: flex
+        min-height: 0     
+    &__logobrief
+        font-size: 18px
+    &__callbacktel
+        font-size: 23px         
     &-hero
         display: flex
+        height: 100%
         padding: 0
         justify-content: center
         align-items: center 
@@ -32,3 +39,97 @@
             width: 560px    
         &__button
              text-align: center
+@media (max-width: 768px)
+    .thankPage
+        .thankPage
+        position: relative
+        height: 100vh
+        .container
+        margin-top: 0
+        margin-bottom: 0
+        &__head
+            height: 87px
+            flex-direction: row
+            //padding: 15px auto
+            justify-content: space-around 
+        &__bar
+            height: 87px
+        &__logo
+            flex-basis: 60% 
+            max-height: 40%
+            &text
+                font-size: 11px
+                margin: 0
+                left: 8%
+                top: 40%
+            &brief
+                font-size: 1.5rem  
+    
+        &__callback
+            flex-direction: row
+            max-height: 30%
+            &tel
+                font-size: 1.4rem
+                margin-right: 10px
+            
+        &-hero
+            display: flex
+            height: 100%
+            padding: 0
+            &__title
+                font-size: 25px !important 
+            &__subtitle
+                font-size: 20px !important
+                width: 450px
+            &__button
+                flex-basis: 20%
+                width: 180px
+                max-height: 45px !important
+                font-size: 1.2rem
+    .logo
+        max-height: 40px
+        max-width: 60px
+
+@media (max-width: 576px)
+    .thankPage
+        &__head
+            height: 95px
+            flex-direction: column-reverse !important
+            //padding: 15px auto
+            justify-content: space-around 
+        &__bar
+            height: 95px
+        &__logo
+            flex-basis: 60% 
+            max-height: 40%
+            &text
+                font-size: 9px
+                margin: 0
+                left: 8%
+                top: 25%
+            &brief
+                font-size: 1.2rem  
+    
+        &__callback
+            flex-direction: row
+            max-height: 30%
+            &tel
+                font-size: 1.4rem
+                margin-right: 10px
+            
+        &-hero
+            justify-content: center
+            align-items: center 
+            &__title
+                font-size: 16px !important 
+            &__subtitle
+                font-size: 11px !important
+                width: 250px
+            &__button
+                flex-basis: 20%
+                width: 156px
+                max-height: 36px !important
+                font-size: 1rem
+    .logo
+        max-height: 23px
+        max-width: 56px        
